@@ -1,0 +1,124 @@
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 0.9em;
+}
+
+.active {
+  background-color: grey;
+}
+
+.container {
+  display: flex;
+  max-width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.content__wrap {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.feature {
+  color: grey;
+}
+
+.feature__info {
+  margin: 0;
+}
+
+.wrap {
+  width: auto;
+  margin-left: 10%;
+}
+
+.title__img {
+  margin-bottom: -2em;
+}
+
+.feature__list {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+.feature__item {
+  position: relative;
+}
+
+.feature__item::before {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: -1.2em;
+  background: url('/img/star-icon.svg');
+}
+
+.footer {
+  width: auto;
+  display: flex;
+  border: 0.1em solid #9e9e9e4f;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.download__item {
+  text-align: left;
+  padding-left: 1em;
+  margin: 0 0 1em 0;
+}
+
+.download__button {
+  width: 100%;
+  height: 2em;
+  background-color: darkorange;
+  border: none;
+  border-radius: 2em;
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  color: white;
+}
+
+.download__button:hover {
+  background-color: orange;
+}
+
+.download__button:active {
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .feature__list {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feature__item {
+    width: 48%;
+  }
+
+  .feature__item:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
