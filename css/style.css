@@ -55,7 +55,7 @@ body {
   width: 1em;
   height: 1em;
   left: -1.2em;
-  background: url('/img/star-icon.svg');
+  background-image: url('img/star-icon.svg');
 }
 
 .footer {
